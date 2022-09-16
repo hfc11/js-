@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p>普通属性用input的属性直接改</p>
+    <p>启用/默认选择用布尔值来修改</p>
+    <input type="text" value="请输入">
+    <!-- 禁用 -->
+    <button disabled>按钮</button>
+    <input type="checkbox" class="agree">
+    <script>
+        // 1.获取元素
+        let input = document.querySelector('input')
+        // 2.取值或者设置值  value
+        input.value = '输入个人信息'
+        input.type = 'password'
+
+        // 2.获取元素
+        let btn = document.querySelector('button')
+        // 启用按钮  disbled默认禁用
+        // btn.disabled = false
+
+        // 3.勾选复选框
+        let checkbox = document.querySelector('.agree')
+        // 表单用布尔值
+        checkbox.checked = true
+
+
+
+    </script>
+</body>
+
+</html>

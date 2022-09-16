@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>盒子</div>
+    <div>2盒子</div>
+    <div class="three">3盒子</div>
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+    </ul>
+    <span></span>
+    <script>
+        // 1.获取
+        let div = document.querySelector('.three')
+        // 2.输出
+        console.log(div);
+        let li = document.querySelector('ul li:last-child')
+        console.log(li);
+        let lis = document.querySelectorAll('li')
+        for (let i = 0; i < lis.length; i++) {
+            console.log(lis[i]);
+        }
+        // 单个元素也是伪数组
+        let liss = document.querySelectorAll('span')
+        console.log(liss);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img {
+            width: 500px;
+            height: 300px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>随机函数.src调用</h1>
+    <p>获取 随机函数 修改随机路径</p>
+    <img src="./images/1.webp" alt="">
+    <script>
+        // 1.获取元素
+        let pic = document.querySelector('img')
+        // 2.随机得到图片序号
+        function getRandom(min, max) {
+            return Math.floor(Math.random() * (max - min + 1)) + min
+        }
+        // 调用函数 实参为照片最小最大数值
+        let num = getRandom(1, 6)
+        // 3.src 属性赋值  注意符号
+        pic.src = `./images/${num}.webp`
+    </script>
+</body>
+
+</html>

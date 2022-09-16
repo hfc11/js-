@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>盒子</div>
+    <div>2盒子</div>
+    <div class=three>3盒子</div>
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+    </ul>
+    <span>1</span>
+    <script>
+        // 得到dom对象伪数组集合  没有pop（） push（）方法
+        // for遍历修改元素
+        let lis = document.querySelectorAll('li')
+        // console.log(lis);
+        for (let i = 0; i < lis.length; i++) {
+            console.log(lis[i]);
+        }
+        // qsAll获取哪怕只有一个元素也是伪数组
+        let span = document.querySelectorAll('span')
+        console.log(span);
+    </script>
+</body>
+
+</html>

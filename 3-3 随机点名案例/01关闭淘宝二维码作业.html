@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .erweima {
+            position: relative;
+            width: 94px;
+            margin: 100px auto;
+            border: 1px solid #ccc;
+            color: rgb(242, 62, 21);
+            text-align: center;
+        }
+
+        .erweima span {
+            display: block;
+            margin-top: 3px;
+            margin-bottom: 4px;
+            line-height: 14px;
+            font-size: 14px;
+        }
+
+        .erweima img {
+            width: 73px;
+            padding: 3px 7px;
+        }
+
+        .btn {
+            position: absolute;
+            left: -15px;
+            top: 0;
+            width: 13px;
+            height: 13px;
+            border: 1px solid #ccc;
+            line-height: 10px;
+            color: rgb(242, 62, 21);
+            font-size: 12px;
+            font-style: normal;
+            text-align: center;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="erweima">
+        <span>淘宝二维码</span>
+        <img src="./images/tao.png" text="">
+        <i class="btn">x</i>
+    </div>
+    <script>
+        // 获取元素  i触发 erweima关闭
+        let btn = document.querySelector('.btn');
+        let erweima = document.querySelector('.erweima');
+
+        // 事件监听 事件三要素
+        btn.addEventListener('click', function () {
+            // 隐藏
+            erweima.style.display = 'none';
+        })
+
+    </script>
+</body>
+
+</html>

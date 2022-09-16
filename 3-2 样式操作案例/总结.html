@@ -1,0 +1,34 @@
+1.document.write()方法
+只能追加到bady前
+文本标签会被解析
+
+2.innerText 属性
+对象.属性=值 只识别不解析标签 不可加'标签strong'
+box.innerText=‘有点意思’
+
+3.**innerHTML 属性
+对象.属性=值 识别解析标签 可加'标签strong'
+box.innerHTML='有点意思'
+
+4.常见样式修改href title src
+
+5.className和classList区别
+修改大量样式的更方便
+修改不多样式的时候方便
+classList是追加和删除不影响以前的类名
+
+6.追加一个类元素 .classList.add('类名')
+删除一个类元素 .classList.remove('类名')
+切换一个类元素 .classList.toggle('类名')
+选择一个类元素 .className('类名')
+
+7.表单-true和false添加和移除属性
+disabled 禁用
+checked
+selected
+
+8.定时器（自动触发）-间歇函数（反复执行）
+作用：根据时间自动重复执行某些代码
+和for比较:有时间缓冲去执行代码
+// 开定时器 setInterval (函数,时间1s)
+// 

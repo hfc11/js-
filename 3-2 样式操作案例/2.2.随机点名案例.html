@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            margin: 50px auto;
+            width: 350px;
+            height: 100px;
+            border: 1px solid #ccc;
+        }
+
+        p {
+            position: relative;
+            padding: 20px;
+            /* background-color: pink; */
+        }
+
+        p span {
+            position: absolute;
+            top: 2px;
+            padding: 19px;
+            width: 150px;
+            text-align: center;
+            border: 1px solid rgb(186, 49, 49);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <p>抽中的选手是：<span>张飞</span></p>
+    </div>
+    <script>
+        // 1.获取
+        let sslor = document.querySelector('span')
+        // 2.**随机抽函数
+        function getRandom(min, max) {
+            return Math.floor(Math.random() * (max - min + 1)) + min
+        }
+        // 声明数组
+        let arr = ['黄翡翠', '赵子龙', '艾瑞克', '万彩泥', '姜子牙']
+        // 生成1个随机数 
+        let random = getRandom(0, arr.length - 1)
+
+        // 3.注册事件
+        // arr给sslor标签，且替换
+        sslor.innerHTML = arr[random]
+        // 从哪删除 删几个
+        arr.splice(random, 1)
+    </script>
+</body>
+
+</html>

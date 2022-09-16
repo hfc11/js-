@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 300px;
+            height: 300px;
+            background-color: pink;
+        }
+
+        .box {
+            width: 400px;
+            height: 400px;
+            margin: 50px auto;
+            border-radius: 10px 50px;
+            border: 2px solid transparent;
+            background-color: plum;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="one"></div>
+    <script>
+        // 1.获取元素
+        let boa = document.querySelector('div')
+        // 2.设置样式 公共区域样式 以className给多个元素设置相同的样式
+        // (1).=为完全更换为box +=为这个元素有两个类名
+        // (2)也可=在 ' '里添加多个类名
+        // boa.className += 'box'
+        boa.className = 'one box'
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-image: url(./images/desktop_1.jpg);
+        }
+    </style>
+</head>
+
+<body>
+    <textarea name="" id="" cols="30" rows="10">"用户注册协议
+        欢迎注册成为京东用户！在您注册过程中，您需要完成我们的注册流程并通过点击同意的形式在线签署以下协议，请您务必仔细阅读、充分理解协议中的条款内容后再点击同意（尤其是以粗体或下划线标识的条款，因为这些条款可能会明确您应履行的义务或对您的权利有所限制）。
+        【请您注意】如果您不同意以下协议全部或任何条款约定，请您停止注册。您停止注册后将仅可以浏览我们的商品信息但无法享受我们的产品或服务。如您按照注册流程提示填写信息，阅读并点击同意上述协议且完成全部注册流程后，即表示您已充分阅读、理解并接受协议的全部内容，并表明您同意我们可以依据协议内容来处理您的个人信息，并同意我们将您的订单信息共享给为完成此订单所必须的第三方合作方（详情查看"
+    </textarea>
+    <br>
+    <button class="btn" disabled>我已阅读该协议</button>
+    <script>
+        // 1.获取元素
+        let btn = document.querySelector('.btn')
+        let i = 6
+        let j = 10
+        // 2.注册事件  定时器
+        let timer = setInterval(function () {
+            i--
+            btn.innerHTML = `我已阅读用户协议(${i})`
+            if (i === 0) {
+                // 1.清除定时器
+                clearInterval(timer)
+                // 2.启用按钮
+                btn.disabled = false
+                // 3.按钮内容
+                btn.innerHTML = `我同意用户协议`
+            }
+
+        }, 1000)
+        // 随机函数
+        function getRandom(min, max) {
+            return Math.floor(Math.random() * (max - min + 1)) + min
+        }
+        let = getRandom(1, 10)
+        document.body.style.backgroundImage = `url(./images/desktop_${j}.jpg)`
+        // 可以用for循环带着背景图和按钮一起变吗，当按钮停下来的时候，背景图还在变
+        var age = 18
+        var age = 20
+        var age = 30
+        console.log(age);
+        // let 中块级变量名只能出现一次 不然报错
+        // let age = 20
+        console.log(age);
+        let year = 20, uname = 'skyblue', sum = '周日'
+        console.log(year, uname, sum);
+        // 块级多种写法
+        // let box = function color() {
+        //     name: '黄翡翠'
+        //     age: 20
+        //     color: pink
+        //     year: '开飞机'
+        // }
+
+        // console.log(box);
+        function fn() {
+            name: '黄翡翠'
+            age: 20
+            color: pink
+            year: '开飞机'
+        }
+        let box = fn
+        // console.log(box);
+        console.log(fn);
+
+        // 练习: 声明一个变量，存放用户购买商品数量为20件
+        //       声明一个变量，存放用户姓名为‘张三’  依次输出
+        let myname = '张三'
+        let ages = 20
+        console.log(ages, myname);
+
+        // 弹出名字
+        // let one = prompt('请输入你的名字')
+        // let one1 = one
+        // console.log(one1);
+        // 把一下点亮
+        // alert(one1)
+
+        // 临时变量 交换变量
+        // let temp
+        // let num1 = 10
+        // let num2 = 20
+        // temp = num1
+        // num1 = num2
+        // num2 = temp
+        // console.log(num1, num2);
+
+        // 临时 交换变量
+        // let num1 = 10, num2 = 20, temp
+        // temp = num1
+        // num1 = num2
+        // num2 = temp
+        // console.log(num1, num2);
+
+        // let num3 = prompt('请输出两个数值'), num4 = prompt('第二个数')
+        // let num5 = num3 + num4
+        // console.log(num5);
+
+        // let= prompt('请输入您的名字'),  prompt('请输入您的年龄'), prompt('请输入您的性别')
+        // alert()
+
+        // let name = prompt('请输入您的名字'), agec = prompt('请输入您的年龄')
+        // color = prompt('请输入您的喜欢的颜色')
+        // let str = `您的名字是${name},今年你${agec}岁啦~,${color}是你最最喜欢的颜色`
+        // console.log(str);
+        // alert(str)
+
+        // let a = 12
+        // function foor1() {
+        //     alert(a)
+        //     alert(b)
+        //     let a = 5
+        //     let b = 12
+        // }
+        // foor1()
+
+        // 必须先定义变量 才能输出正确 不然会报错 这件事es6属性
+        let names = '黄翡翠'
+        console.log(names);
+
+        // 不能使用同一个变量名 没有变量覆盖
+        let demo = "小明"
+        // let demo = "小红"
+        console.log(demo);
+
+        // 块级作用域 1.循环遍历直到i<5
+        // fn2匿名 
+        function fn2() {
+            for (let i = 0; i < 5; i++) {
+                console.log(i);
+                // console.log(i + ++i);
+            }
+            console.log(i);
+        }
+        fn2()
+
+        // 数组
+        let [a, b, c] = ['黄翡翠', '开飞机', '赵子龙']
+        console.log(b, a);
+
+        let arr = [1, 8, 58]
+        // let [, , one3] = arr
+        let strArr = [arr]
+        console.log(strArr);
+
+        let str1 = '穿堂而过的'
+        let str2 = '风'
+        let newStr = `我是${str1}${str2}`
+        console.log(newStr)
+
+        function fn3() {
+            return "帅的不行!"
+        }
+        let string2 = `我真是${fn3()}`
+        console.log(string2);
+
+
+
+        // let fn2 = (num1, num2) => {
+        //     let result = num1 + num2
+        //     return result
+        // }
+        // fn(3, 5)
+
+        // 数组解构 重取
+        const F4 = ['黄翡翠', 'pink老师', '孙刘柳', '柳绿红']
+        let [huang, pink, sun, yang] = F4
+        console.log(huang, yang);
+
+        // 对象解构
+        const huangg = {
+            name: '黄翡翠',
+            aged: 18,
+            feiji: function () {
+                console.log('我要开飞机');
+            },
+        };
+        let { name, aged, feiji } = huangg;
+        console.log(name, aged, feiji);
+        console.log(name);
+        console.log(aged);
+        console.log(feiji);
+
+        // 字符串 反引号直接换行--应该可以用那个引引加加
+        let str = `
+            <ul>
+                <li>a</li>
+                <li>b</li>
+                <li>c</li>
+            </ul>
+            `
+        console.log(str);
+
+        let str3 = `
+                 你的名字
+                 我还记得
+                 zjy
+        `
+        console.log(str3);
+
+        // 变量名赋值  然后用${变量名}拼接固定格式
+        // let name1 = '黄翡翠'
+        // let job = `${name1}是要开大飞机的`
+        // console.log(job);
+
+        // 变量拼接用function（）方法实现  这里是一个块代码
+        let name2 = '黄翡翠'
+        let job1 = `${name2}是要开大飞机的`
+        console.log(job1);
+        let school = {
+            name2,
+            job1,
+            fun() {
+                console.log(1);
+            },
+        };
+
+        // 旧函数书写 写法不一致，运行机制一致
+        // let fun = function (a, b) {}
+        // 箭头函数书写 2形参 1形参
+        // let fun = (a, b) => {}
+        // let fun = a=>{}
+        // 只有一个执行语句--的简写方式  a+b为执行语句
+        // let fun = a=> a+b
+
+        // es6函数书写方式 可以给形参赋值 
+        function connect({ a, b, c = 101 }) {
+            console.log(a);
+            console.log(b);
+            console.log(c);
+        }
+        // 在最后解构赋值  注意 ; 和 , 形参({})
+        connect({
+            a: 10,
+            b: 20,
+        });
+
+        // ...args放函数内最后  有多个实参时...args变数组形式
+        function fun(a, b, ...args) {
+            console.log(a);
+            console.log(b);
+            console.log(args);
+        }
+        fun(1, 2, 3, 4, 5, 6);
+
+        let usrename = prompt('请输入您的年龄')
+        let age = prompt('输入年龄')
+        let sex = prompt('输入性别')
+        alert(`你的姓名是:${usrename}
+                年龄是:${age}
+                性别是:${sex}`)
+
+        
+    </script>
+</body>
+
+</html>

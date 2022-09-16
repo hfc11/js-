@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            background-color: plum;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div>黄翡翠代号007</div>
+    <script>
+        let div = document.querySelector('div')
+        // document.write（）方法
+        // 只能追加到bady前文本标签会被解析
+        // div.innerText = '赵子龙在飞车'  对象.属性=值  只识别内容不解析标签 不可加标签
+        // ******div.innerHTML 对象.属性=值  识别解析标签 可加标签
+        div.innerHTML = '<strong>赵子龙在飞车</strong><p>早上好咯</p>'
+    </script>
+</body>
+
+</html>

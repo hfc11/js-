@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // 1.one写法 
+        // setInterval(function () {
+        //     console.log('黄翡翠开飞机');
+        // }, 1000)
+        // 2.two写法 函数名后不加() 返id数字
+        function show() {
+            console.log('黄翡翠月入5555万');
+        }
+        // 把函数返回值用let 命名接过来
+        // timer为数字型number
+        let timer = setInterval(show, 1000)
+        
+        // 清除定时器
+        clearInterval(timer)
+    </script>
+</body>
+
+</html>

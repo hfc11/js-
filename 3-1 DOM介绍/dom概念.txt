@@ -1,0 +1,16 @@
+dom概念：文档对象模型
+                 标签转对象来处理
+                 操作html的标签内容  
+dom   树：直观看出同级和子级对象的关系
+dom对象：html标签获取过来，称为dom对象
+
+1.获取元素常用?
+        document.querySelector(ul)
+        document.querySelectorAll('li')
+2.两者区别?
+        qs获取一个元素可直接操作修改
+        qsAll获取多个相同元素 得伪数组，for遍历得到每个对象
+3.（）括号的注意事项?
+         写css选择器
+         必须字符串 必须加引号
+        *不管怎么获取，得到的都是dom对象

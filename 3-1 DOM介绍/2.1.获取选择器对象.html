@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>盒子</div>
+    <div>2盒子</div>
+    <div class=three>3盒子</div>
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+    </ul>
+    <script>
+        // 查询到返DOMdiv对象 查询不到返null值
+        // log输出 无引号 因此时的div和li是对象 带引号输出为字符串
+        // let div = document.querySelector('div')
+        let div = document.querySelector('.three')
+        console.log(div);
+        let li = document.querySelector('ul li:last-child')
+        console.log(li);
+    </script>
+</body>
+
+</html>
